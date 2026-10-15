@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ff4444","on-secondary":"#001a1a","surface-container-highest":"#28283e","outline-variant":"#302840","surface-variant":"#1e1e30","tertiary-fixed-dim":"#ffe04a","on-secondary-fixed":"#001a1a","surface-bright":"#1a1a2e","tertiary-fixed":"#fff0c0","error-container":"#3d0f0f","primary-fixed-dim":"#ff80aa","background":"#0a0a12","surface-container-high":"#1e1e30","surface-tint":"#ff2d78","on-secondary-container":"#c0fff4","surface-dim":"#0f0f1a","on-primary-container":"#ffe0ec","surface":"#0f0f1a","secondary-fixed-dim":"#00e6b8","on-primary-fixed":"#3d0020","on-tertiary-container":"#fff0c0","on-tertiary-fixed":"#1a1000","on-surface-variant":"#a098b0","on-background":"#e8e0f0","tertiary":"#ffe04a","surface-container":"#141422","outline":"#5a5068","on-error-container":"#ffa0a0","primary-container":"#b3004e","on-tertiary":"#1a1000","on-secondary-fixed-variant":"#004d4d","primary":"#ff2d78","primary-fixed":"#ffe0ec","on-surface":"#e8e0f0","inverse-surface":"#e8e0f0","secondary-container":"#004d3d","on-error":"#1a0000","surface-container-low":"#111118","on-primary":"#1a0010","tertiary-container":"#665200","inverse-primary":"#8c0038","inverse-on-surface":"#0a0a12","surface-container-lowest":"#0a0a12","secondary":"#00ffcc","on-primary-fixed-variant":"#8c0038","on-tertiary-fixed-variant":"#665200","secondary-fixed":"#c0fff4"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{},"fontFamily":{"headline":["Sora"],"display":["Sora"],"body":["Inter"],"label":["Space Grotesk"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-low/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.5)]"><div class="h-16 w-full px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Police badge emblem shield with Indian emblem motif aesthetic, deep navy blue and saffron gold accents, clean modern vector style. Brand logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W1c9UA_wpXNBkD5chWMz9EHO-MbSv0c3AAO3aTmwRfN2oJd8LdsBH5J3VvNkD3q5S21l__s_lM6OYMS3aYbg7fS7Hx4rUwVUnDUKCtUlWb7tB4Up90ZWpvTtP_VR_SVCo_SdIhWOqVjjOH6x-BLyD6m4LhAz-GbQMBYjwwXyAiCWRgBUbcTzzLpKFaOL9oP92txsdeI5DjiyWos4p0EXjY5GKTLT7_wKedhcxQ1nYyZIaiG-RrfkCo3Q"/><div class="flex flex-col"><span class="font-headline font-bold text-sm tracking-wider uppercase text-on-surface">TRAFFIC POLICE COMMAND HQ</span><span class="font-label text-[10px] tracking-widest text-secondary uppercase">DELHI ENFORCEMENT GRID</span></div></div><div class="flex items-center gap-6"><div class="hidden xl:flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label text-xs uppercase tracking-wider text-on-surface-variant">POL-NET SECURE:</span><span class="font-label text-xs font-bold text-secondary uppercase tracking-wider">LINK ESTABLISHED</span></div><div class="hidden md:flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full font-label text-xs text-on-surface-variant"><span class="material-symbols-outlined text-sm text-tertiary">schedule</span><span class="uppercase tracking-wider">IST SYNC 28.6139°N</span></div><button class="flex items-center gap-2 px-3.5 py-1.5 bg-primary-container text-on-primary-container rounded-lg font-label text-xs uppercase font-bold tracking-wider hover:bg-surface-tint hover:text-on-primary transition-all"><span class="material-symbols-outlined text-sm">campaign</span><span>BROADCAST ALERT</span></button><div class="flex items-center gap-3 pl-2"><div class="text-right hidden sm:block"><div class="font-headline font-bold text-xs text-on-surface uppercase">HQ SUPERINTENDENT</div><div class="font-label text-[10px] text-tertiary uppercase tracking-wider">ZONE 1 ACTIVE</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-72 bg-surface-container-low/95 backdrop-blur-xl z-40 flex flex-col justify-between py-6 shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="flex flex-col gap-6 px-4"><div class="px-3 font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">SURVEILLANCE & DISPATCH CORE</div><nav class="flex flex-col gap-1.5" data-active-classes="bg-surface-container-high text-on-surface font-bold rounded-lg"><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-surface-container-high text-on-surface font-bold rounded-lg" data-path="command-overview" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label text-xs tracking-wider uppercase">Command Overview</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="live-hotspots-and-anpr-grid" href="#"><span class="material-symbols-outlined text-[20px]">radar</span><span class="font-label text-xs tracking-wider uppercase">Live Hotspots & ANPR</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="challan-records-and-audit" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-label text-xs tracking-wider uppercase">Challan Records</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="inspector-fleet-management" href="#"><span class="material-symbols-outlined text-[20px]">local_police</span><span class="font-label text-xs tracking-wider uppercase">Inspector Fleet</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="impound-and-tow-yard" href="#"><span class="material-symbols-outlined text-[20px]">no_crash</span><span class="font-label text-xs tracking-wider uppercase">Impound & Tow Yard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label text-xs tracking-wider uppercase">System Settings</span></a></nav></div><div class="px-4"><div class="bg-surface-container p-3.5 rounded-lg flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label text-[10px] uppercase tracking-wider text-on-surface-variant">DEFCON GRID LEVEL</span><span class="font-label text-[10px] font-bold text-secondary uppercase">ALPHA 01</span></div><div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden"><div class="bg-secondary h-full w-4/5 rounded-full"></div></div><div class="flex justify-between items-center text-[10px] font-label text-on-surface-variant pt-1"><span>NODES 412/412</span><span class="text-secondary">OPERATIONAL</span></div></div></div></aside><div class="pl-72"><main class="relative pt-16 w-full min-h-screen bg-background px-8 py-8"><div class="flex flex-col w-full gap-6 text-on-surface">
+<!-- TOP PROTOCOL BAR & SYSTEM CONTEXT -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-2">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline font-bold text-xl tracking-tight text-on-surface">GRID ENFORCEMENT HUD</span>
+<span class="font-label text-xs tracking-widest text-secondary uppercase font-semibold">ACT-SEC 28 // NCT DELHI</span>
+</div>
+<span class="hidden sm:inline-block px-2.5 py-0.5 rounded text-[11px] font-label font-bold tracking-wider bg-surface-container-high text-tertiary">LIVE TELEMETRY ACTIVE</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container font-label text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">database</span>
+<span>VAHAN-SARATHI API:</span>
+<span class="text-secondary font-bold">ONLINE (99.98%)</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-label uppercase tracking-wider text-on-surface hover:text-secondary transition-all hover:shadow-[0_0_12px_rgba(0,255,204,0.3)]">
+<span class="material-symbols-outlined text-sm">refresh</span>
+<span>SYNC GRID</span>
+</button>
+</div>
+</div>
+<!-- 1. KPI STATS ROW (5 COLUMNS BENTO METRIC CARDS) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- Metric 1: Challans Today -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full blur-xl group-hover:bg-primary/20 transition-all"></div>
+<div class="flex justify-between items-start mb-2">
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Total Challans Today</span>
+<span class="flex items-center text-[10px] font-label font-bold text-secondary bg-secondary-container/40 px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs">trending_up</span>+14.2%
+        </span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline text-3xl font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">2,845</span>
+<span class="font-label text-xs text-on-surface-variant">UNITS</span>
+</div>
+<div class="text-[11px] font-label text-on-surface-variant/80 truncate">
+<span class="text-secondary font-medium">1,920</span> Auto-ANPR • <span class="text-tertiary font-medium">925</span> Field Handheld
+      </div>
+</div>
+<!-- Metric 2: Fines Assessed -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-xl group-hover:bg-secondary/20 transition-all"></div>
+<div class="flex justify-between items-start mb-2">
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Fines Assessed</span>
+<span class="font-label text-[10px] text-tertiary uppercase tracking-wider font-semibold">₹ INR CURRENCY</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline text-3xl font-bold tracking-tight text-on-surface group-hover:text-secondary transition-colors">₹48.2L</span>
+<span class="font-label text-xs text-on-surface-variant">VAL</span>
+</div>
+<div class="text-[11px] font-label text-on-surface-variant/80 truncate">
+<span class="text-secondary font-medium">₹29.4L</span> Spot UPI • <span class="text-primary font-medium">₹18.8L</span> V-Court
+      </div>
+</div>
+<!-- Metric 3: Active Inspectors -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl group-hover:bg-tertiary/20 transition-all"></div>
+<div class="flex justify-between items-start mb-2">
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Field Inspectors</span>
+<span class="font-label text-[10px] text-secondary font-bold">88.7% DEPLOY</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline text-3xl font-bold tracking-tight text-on-surface">142</span>
+<span class="font-label text-xs text-on-surface-variant">/ 160 ON-DUTY</span>
+</div>
+<div class="text-[11px] font-label text-on-surface-variant/80 truncate">
+        6 Active Circles • <span class="text-on-surface-variant">18 Standby/Reserve</span>
+</div>
+</div>
+<!-- Metric 4: Hotspot Incident Flags -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/30 transition-all"></div>
+<div class="flex justify-between items-start mb-2">
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Hotspot Incident Flags</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline text-3xl font-bold tracking-tight text-primary">7</span>
+<span class="font-label text-xs font-bold text-primary uppercase tracking-wide">CRITICAL</span>
+</div>
+<div class="text-[11px] font-label text-on-surface-variant/80 truncate">
+        4 Red-Light Cluster • 3 High Speed traps
+      </div>
+</div>
+<!-- Metric 5: Real-time ANPR OCR Rate -->
+<div class="relative overflow-hidden p-4 rounded-xl bg-surface-container hover:bg-surface-container-high transition-all group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-xl group-hover:bg-secondary/20 transition-all"></div>
+<div class="flex justify-between items-start mb-2">
+<span class="font-label text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">ANPR OCR Accuracy</span>
+<span class="material-symbols-outlined text-sm text-secondary">linked_camera</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline text-3xl font-bold tracking-tight text-secondary">98.6%</span>
+<span class="font-label text-xs text-on-surface-variant">LPR CONF</span>
+</div>
+<div class="text-[11px] font-label text-on-surface-variant/80 truncate">
+        Across <span class="text-on-surface font-semibold">412 Optical Cams</span> active
+      </div>
+</div>
+</div>
+<!-- 2. VISUAL ANALYTICS GRID (BAR CHART + RADAR HOTSPOT MAP) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- LEFT: WEEKLY CHALLAN INFLOW (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col justify-between p-6 rounded-xl bg-surface-container relative">
+<div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 bg-primary rounded-full"></span>
+<h2 class="font-headline text-base font-bold text-on-surface tracking-wide">Weekly Challan Inflow & Spot Recovery</h2>
+</div>
+<p class="font-label text-xs text-on-surface-variant mt-0.5">Aggregated violation processing via PoS terminals and e-Challan camera arrays</p>
+</div>
+<div class="flex items-center gap-2">
+<!-- Filter Tabs -->
+<div class="inline-flex rounded-lg bg-surface-container-high p-0.5 font-label text-xs">
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface">Daily</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-highest text-secondary font-bold shadow-sm">Weekly</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface">Monthly</button>
+</div>
+<!-- Export Button -->
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-secondary font-label text-xs hover:shadow-[0_0_10px_rgba(0,255,204,0.2)]">
+<span class="material-symbols-outlined text-sm">download</span>
+<span class="hidden sm:inline">CSV</span>
+</button>
+</div>
+</div>
+<!-- SVG Stacked Bar Chart -->
+<div class="w-full flex-1 flex flex-col justify-end pt-2">
+<div class="h-60 w-full flex items-end justify-between gap-3 sm:gap-6 px-2 pb-2">
+<!-- Mon -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary/80 group-hover:bg-primary transition-all rounded-t-sm" style="height: 42%;"></div>
+<div class="w-full bg-secondary/80 group-hover:bg-secondary transition-all" style="height: 38%;"></div>
+</div>
+<span class="font-label text-[11px] text-on-surface-variant group-hover:text-on-surface">MON</span>
+<!-- Tooltip -->
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              2,120 (₹35.8L)
+            </div>
+</div>
+<!-- Tue -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary/80 group-hover:bg-primary transition-all rounded-t-sm" style="height: 48%;"></div>
+<div class="w-full bg-secondary/80 group-hover:bg-secondary transition-all" style="height: 45%;"></div>
+</div>
+<span class="font-label text-[11px] text-on-surface-variant group-hover:text-on-surface">TUE</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              2,430 (₹41.0L)
+            </div>
+</div>
+<!-- Wed -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary/80 group-hover:bg-primary transition-all rounded-t-sm" style="height: 52%;"></div>
+<div class="w-full bg-secondary/80 group-hover:bg-secondary transition-all" style="height: 50%;"></div>
+</div>
+<span class="font-label text-[11px] text-on-surface-variant group-hover:text-on-surface">WED</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              2,680 (₹45.3L)
+            </div>
+</div>
+<!-- Thu -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary/80 group-hover:bg-primary transition-all rounded-t-sm" style="height: 44%;"></div>
+<div class="w-full bg-secondary/80 group-hover:bg-secondary transition-all" style="height: 46%;"></div>
+</div>
+<span class="font-label text-[11px] text-on-surface-variant group-hover:text-on-surface">THU</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              2,340 (₹39.5L)
+            </div>
+</div>
+<!-- Fri -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary/80 group-hover:bg-primary transition-all rounded-t-sm" style="height: 60%;"></div>
+<div class="w-full bg-secondary/80 group-hover:bg-secondary transition-all" style="height: 58%;"></div>
+</div>
+<span class="font-label text-[11px] text-on-surface-variant group-hover:text-on-surface">FRI</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              3,110 (₹52.5L)
+            </div>
+</div>
+<!-- Sat (PEAK) -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40">
+<div class="w-full bg-primary group-hover:brightness-125 transition-all rounded-t-sm shadow-[0_0_12px_rgba(255,45,120,0.5)]" style="height: 78%;"></div>
+<div class="w-full bg-secondary group-hover:brightness-125 transition-all shadow-[0_0_12px_rgba(0,255,204,0.5)]" style="height: 70%;"></div>
+</div>
+<span class="font-label text-[11px] font-bold text-secondary">SAT</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-secondary whitespace-nowrap shadow-xl z-20">
+              3,890 (₹65.7L - PEAK)
+            </div>
+</div>
+<!-- Sun (TODAY) -->
+<div class="flex-1 flex flex-col items-center gap-2 group relative">
+<div class="w-full flex flex-col items-center justify-end h-44 rounded overflow-hidden bg-surface-container-high/40 ring-1 ring-secondary/50">
+<div class="w-full bg-primary/90 group-hover:bg-primary transition-all rounded-t-sm" style="height: 55%;"></div>
+<div class="w-full bg-secondary/90 group-hover:bg-secondary transition-all" style="height: 52%;"></div>
+</div>
+<span class="font-label text-[11px] font-bold text-on-surface">SUN*</span>
+<div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-on-surface whitespace-nowrap shadow-xl z-20">
+              2,845 (TODAY LIVE)
+            </div>
+</div>
+</div>
+<!-- Legend and Ticket Average -->
+<div class="flex flex-wrap items-center justify-between pt-4 mt-3 border-t border-outline-variant/30 font-label text-xs text-on-surface-variant">
+<div class="flex items-center gap-5">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span>Paid / Spot UPI Recovery</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span>Pending / Virtual Court</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 font-medium">
+<span>Avg. Penalty Ticket:</span>
+<span class="font-bold text-tertiary">₹1,690</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: RADAR HOTSPOT MAP & CIRCLE TELEMETRY (5 COLS) -->
+<div class="lg:col-span-5 flex flex-col justify-between p-6 rounded-xl bg-surface-container relative overflow-hidden">
+<div class="flex items-center justify-between mb-3 z-10">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 bg-secondary rounded-full"></span>
+<h2 class="font-headline text-base font-bold text-on-surface tracking-wide">High-Density Hotspots & ANPR Grid</h2>
+</div>
+<span class="flex items-center gap-1 font-label text-[11px] text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> LIVE RADAR
+        </span>
+</div>
+<!-- Vector Map Canvas Simulation -->
+<div class="relative w-full h-56 rounded-lg bg-surface-container-low overflow-hidden flex items-center justify-center">
+<!-- SVG Grid Background -->
+<svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="28" id="radarGrid" patternunits="userSpaceOnUse" width="28">
+<path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00ffcc" stroke-width="0.7"></path>
+</pattern>
+</defs>
+<rect fill="url(#radarGrid)" height="100%" width="100%"></rect>
+<circle cx="50%" cy="50%" fill="none" r="90" stroke="#00ffcc" stroke-dasharray="4 4" stroke-width="0.8"></circle>
+<circle cx="50%" cy="50%" fill="none" r="50" stroke="#ff2d78" stroke-width="0.5"></circle>
+</svg>
+<!-- Pulsing Hotspot Markers -->
+<!-- Hotspot 1: Connaught Place Outer Circle (Cyan Patrol) -->
+<div class="absolute top-[32%] left-[48%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-6 w-6 rounded-full bg-secondary/50"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary shadow-[0_0_8px_#00ffcc]"></span>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-secondary whitespace-nowrap z-20">
+            CP Outer Circle • Normal Patrol
+          </div>
+</div>
+<!-- Hotspot 2: AIIMS Flyover (Critical Red) -->
+<div class="absolute top-[58%] left-[42%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-8 w-8 rounded-full bg-primary/60"></span>
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-primary shadow-[0_0_12px_#ff2d78]"></span>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-primary whitespace-nowrap z-20">
+            AIIMS Jnc • 182 Violations/hr
+          </div>
+</div>
+<!-- Hotspot 3: ITO Junction (Yellow Speed Trap) -->
+<div class="absolute top-[28%] left-[72%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-6 w-6 rounded-full bg-tertiary/40"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary shadow-[0_0_8px_#ffe04a]"></span>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col bg-surface-container-highest px-2 py-1 rounded text-[10px] font-label text-tertiary whitespace-nowrap z-20">
+            ITO Chowk • Speed Cam Alert
+          </div>
+</div>
+<!-- Hotspot 4: Dhaula Kuan Enclave (Cyan Patrol) -->
+<div class="absolute top-[65%] left-[24%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary shadow-[0_0_6px_#00ffcc]"></span>
+</div>
+<!-- Hotspot 5: Ashram Chowk (Critical Red) -->
+<div class="absolute top-[75%] left-[68%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer z-10">
+<div class="relative flex items-center justify-center">
+<span class="animate-ping absolute inline-flex h-7 w-7 rounded-full bg-primary/50"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary shadow-[0_0_10px_#ff2d78]"></span>
+</div>
+</div>
+<!-- Radar Sweep Scanner Line -->
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-transparent via-secondary/5 to-transparent animate-pulse"></div>
+<div class="absolute bottom-2 left-3 font-label text-[10px] text-on-surface-variant uppercase">
+          POL-NET SECTOR HUD // 28.6139° N, 77.2090° E
+        </div>
+</div>
+<!-- Top Congested Hotspot List -->
+<div class="mt-4 flex flex-col gap-2">
+<div class="font-label text-[11px] font-bold tracking-wider uppercase text-on-surface-variant">Top Congestion & Capture Zones:</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/60 font-label text-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-semibold text-on-surface">AIIMS Flyover North</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span>ANPR: <strong class="text-secondary">242/hr</strong></span>
+<span>Index: <strong class="text-primary font-bold">8.9 CRIT</strong></span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/60 font-label text-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-semibold text-on-surface">ITO Ring Road Crossing</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span>ANPR: <strong class="text-secondary">194/hr</strong></span>
+<span>Index: <strong class="text-tertiary font-bold">7.2 HIGH</strong></span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/60 font-label text-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-semibold text-on-surface">Ashram Chowk Underpass</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant">
+<span>ANPR: <strong class="text-secondary">168/hr</strong></span>
+<span>Index: <strong class="text-primary font-bold">8.1 CRIT</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. COMPREHENSIVE INSPECTOR FLEET MANAGEMENT ROSTER -->
+<div class="flex flex-col rounded-xl bg-surface-container p-6 gap-5">
+<!-- Table Header & Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 bg-secondary rounded-full"></span>
+<h2 class="font-headline text-lg font-bold text-on-surface">Active Inspector Roster & Field Deployment</h2>
+</div>
+<p class="font-label text-xs text-on-surface-variant mt-0.5">Live handheld PoS devices, interceptor fleet locations, and real-time challan tally</p>
+</div>
+<!-- Action Toolbar -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Search -->
+<div class="relative flex-1 sm:w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+<input class="w-full bg-surface-container-high rounded-lg pl-9 pr-3 py-1.5 font-label text-xs text-on-surface placeholder-on-surface-variant focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="Search Officer, Brass ID, Vehicle..." type="text"/>
+</div>
+<!-- Filter Status -->
+<select class="bg-surface-container-high text-on-surface rounded-lg px-3 py-1.5 font-label text-xs focus:outline-none">
+<option>Status: All (160)</option>
+<option>Active On-Duty (142)</option>
+<option>In Transit (11)</option>
+<option>Standby/Reserve (7)</option>
+</select>
+<!-- Filter Circle -->
+<select class="bg-surface-container-high text-on-surface rounded-lg px-3 py-1.5 font-label text-xs focus:outline-none">
+<option>Circle: All Circles</option>
+<option>South Circle</option>
+<option>Central Circle</option>
+<option>West Circle</option>
+<option>New Delhi Circle</option>
+</select>
+<!-- Relieve Button -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-error font-label text-xs uppercase tracking-wider hover:bg-error/20 transition-all">
+<span class="material-symbols-outlined text-sm">person_remove</span>
+<span class="hidden md:inline">Relieve Selected</span>
+</button>
+<!-- Deploy Button -->
+<button class="flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary text-on-primary font-label text-xs font-bold uppercase tracking-wider hover:shadow-[0_0_16px_rgba(255,45,120,0.6)] transition-all">
+<span class="material-symbols-outlined text-sm font-bold">add</span>
+<span>Deploy Inspector</span>
+</button>
+</div>
+</div>
+<!-- Data Table Container -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left font-body text-xs border-collapse">
+<thead>
+<tr class="bg-surface-container-high/80 font-label text-[11px] uppercase tracking-wider text-on-surface-variant">
+<th class="py-3 px-3 w-10 text-center">
+<input class="rounded bg-surface-container-highest text-primary focus:ring-0" type="checkbox"/>
+</th>
+<th class="py-3 px-3">Officer Dossier</th>
+<th class="py-3 px-3">Sector & Checkpoint</th>
+<th class="py-3 px-3">Vehicle & Interceptor Kit</th>
+<th class="py-3 px-3 text-center">Status</th>
+<th class="py-3 px-3">Today's Output</th>
+<th class="py-3 px-3">POS & POL-NET</th>
+<th class="py-3 px-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-label">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded bg-surface-container-highest text-primary focus:ring-0" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-headline font-bold text-secondary text-xs">
+                  RK
+                </div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-xs text-on-surface">Insp. Rajesh Kumar</span>
+<span class="text-[10px] text-tertiary font-semibold tracking-wider">#TP-8429 • ZONE SOUTH</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">MG Road Junction</span>
+<span class="text-[10px] text-on-surface-variant">Hauz Khas Circle (Checkpt 04)</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">minor_crash</span>
+<span>Interceptor DL-1T-0419 + Radar R4</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider bg-secondary-container text-secondary shadow-[0_0_8px_rgba(0,255,204,0.3)]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> ON-DUTY
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">24 Challans</span>
+<span class="text-[10px] text-on-surface-variant">₹48,000 Assessed</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">battery_horiz_075</span>
+<span class="text-[11px] text-on-surface">88%</span>
+<span class="text-[10px] text-secondary font-bold">4G STRONG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary" title="Dispatch Radio">
+<span class="material-symbols-outlined text-base">cell_tower</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant" title="More">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded bg-surface-container-highest text-primary focus:ring-0" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-headline font-bold text-primary text-xs">
+                  AV
+                </div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-xs text-on-surface">Sub-Insp. Amit Verma</span>
+<span class="text-[10px] text-tertiary font-semibold tracking-wider">#TP-9014 • ZONE CENTRAL</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">AIIMS Flyover North</span>
+<span class="text-[10px] text-on-surface-variant">Safdarjung Circle (Checkpt 01)</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">two_wheeler</span>
+<span>Patrol Bike DL-1S-8802 + ANPR Kit</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider bg-secondary-container text-secondary shadow-[0_0_8px_rgba(0,255,204,0.3)]">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span> ON-DUTY
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">31 Challans</span>
+<span class="text-[10px] text-on-surface-variant">₹59,500 Assessed</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-tertiary">battery_5_bar</span>
+<span class="text-[11px] text-on-surface">64%</span>
+<span class="text-[10px] text-secondary font-bold">4G STRONG</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary" title="Dispatch Radio">
+<span class="material-symbols-outlined text-base">cell_tower</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant" title="More">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded bg-surface-container-highest text-primary focus:ring-0" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-headline font-bold text-tertiary text-xs">
+                  PS
+                </div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-xs text-on-surface">Insp. Pooja Sharma</span>
+<span class="text-[10px] text-tertiary font-semibold tracking-wider">#TP-7731 • ZONE WEST</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Dhaula Kuan Enclave</span>
+<span class="text-[10px] text-on-surface-variant">Ridge Road Sector (Checkpt 09)</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-secondary">minor_crash</span>
+<span>Interceptor DL-1T-1190 + Cam Array</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider bg-tertiary-container/50 text-tertiary shadow-[0_0_8px_rgba(255,224,74,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> IN TRANSIT
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">11 Challans</span>
+<span class="text-[10px] text-on-surface-variant">₹19,500 Assessed</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">battery_full</span>
+<span class="text-[11px] text-on-surface">94%</span>
+<span class="text-[10px] text-tertiary font-bold">5G RELAY</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary" title="Dispatch Radio">
+<span class="material-symbols-outlined text-base">cell_tower</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant" title="More">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high/50 transition-colors">
+<td class="py-3.5 px-3 text-center">
+<input class="rounded bg-surface-container-highest text-primary focus:ring-0" type="checkbox"/>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-headline font-bold text-on-surface-variant text-xs">
+                  HS
+                </div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-xs text-on-surface">Insp. Harpreet Singh</span>
+<span class="text-[10px] text-on-surface-variant font-semibold tracking-wider">#TP-5520 • ZONE CENTRAL</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">ITO Ring Road Crossing</span>
+<span class="text-[10px] text-on-surface-variant">Vikas Marg Hub (Relieved Shift)</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+<span>Tow Recovery Truck TR-02</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider bg-surface-container-highest text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span> RELIEVED
+              </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface-variant">18 Challans</span>
+<span class="text-[10px] text-on-surface-variant">₹34,500 Assessed</span>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">battery_2_bar</span>
+<span class="text-[11px] text-on-surface-variant">32%</span>
+<span class="text-[10px] text-on-surface-variant">DOCK SYNC</span>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary" title="Dispatch Radio">
+<span class="material-symbols-outlined text-base">cell_tower</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-highest text-on-surface-variant" title="More">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Count Details -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-2 font-label text-xs text-on-surface-variant">
+<span>Showing <strong>1 - 4</strong> of <strong>160</strong> Assigned Personnel</span>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface">Prev</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-highest text-secondary font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface">3</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- 4. QUICK COMMAND STRIP / BOTTOM EMERGENCY NOTIFICATION BAR -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-xl bg-surface-container-low shadow-[0_0_20px_rgba(0,0,0,0.6)]">
+<!-- Left: VIP Corridor Protocol Action -->
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-8 h-8 rounded-lg bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined text-base">emergency_share</span>
+</div>
+<div>
+<div class="font-headline text-xs font-bold text-on-surface uppercase tracking-wider">VIP Green Corridor Broadcast</div>
+<div class="font-label text-[11px] text-on-surface-variant">Automated signal preempt on Outer Ring Road & Shanti Path</div>
+</div>
+<button class="ml-2 px-3 py-1 rounded text-xs font-label uppercase font-bold tracking-wider bg-surface-container-highest hover:bg-primary hover:text-on-primary text-primary transition-all">
+        Engage Protocol
+      </button>
+</div>
+<!-- Center/Right: Sync & Dossier -->
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-2 font-label text-xs text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>NIC Sarathi DB Sync:</span>
+<span class="text-on-surface font-semibold">42s ago • 100% matched</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-xs font-label text-on-surface transition-all">
+<span class="material-symbols-outlined text-sm text-tertiary">print</span>
+<span>Shift Dossier</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary font-label text-xs font-bold uppercase tracking-wider hover:shadow-[0_0_12px_rgba(0,255,204,0.3)] transition-all">
+<span class="material-symbols-outlined text-sm">notifications_active</span>
+<span>Broadcast All Radios</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

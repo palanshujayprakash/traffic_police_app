@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary": "#ffffff", "tertiary-fixed": "#6ffbbe", "surface-container": "#eaedff", "on-tertiary-fixed": "#002113", "on-secondary-fixed": "#2a1700", "surface-container-high": "#e2e7ff", "surface": "#faf8ff", "primary-fixed-dim": "#aec6ff", "secondary": "#855300", "secondary-fixed": "#ffddb8", "outline": "#747780", "on-tertiary-container": "#00a874", "on-error": "#ffffff", "inverse-surface": "#283044", "primary-fixed": "#d8e2ff", "surface-bright": "#faf8ff", "surface-dim": "#d2d9f4", "error": "#ba1a1a", "on-secondary-fixed-variant": "#653e00", "inverse-primary": "#aec6ff", "surface-container-lowest": "#ffffff", "primary-container": "#0b2a5b", "surface-container-highest": "#dae2fd", "on-primary-fixed": "#001a42", "tertiary": "#001c10", "secondary-fixed-dim": "#ffb95f", "surface-tint": "#455e91", "outline-variant": "#c4c6d0", "tertiary-container": "#003320", "error-container": "#ffdad6", "on-surface-variant": "#44474f", "on-tertiary-fixed-variant": "#005236", "on-primary-fixed-variant": "#2c4678", "on-primary-container": "#7a93ca", "primary": "#00163a", "on-error-container": "#93000a", "tertiary-fixed-dim": "#4edea3", "on-secondary-container": "#684000", "inverse-on-surface": "#eef0ff", "secondary-container": "#fea619", "surface-variant": "#dae2fd", "background": "#faf8ff", "surface-container-low": "#f2f3ff", "on-background": "#131b2e", "on-surface": "#131b2e", "on-primary": "#ffffff", "on-secondary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-2xl": "2rem", "space-md": "0.75rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "1rem", "margin-lg": "1.5rem", "space-xl": "1.5rem", "gutter": "1rem", "gutter-sm": "0.75rem" }, fontFamily: { "body-lg": ["Inter"], "label-md": ["Inter"], "plate-display": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"] }, fontSize: { "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "plate-display": ["22px", { lineHeight: "28px", letterSpacing: "0.08em", fontWeight: "800" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "700" }], "label-lg": ["16px", { lineHeight: "24px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Police badge emblem shield with Indian emblem motif aesthetic, deep navy blue and saffron gold accents, clean modern vector style. Brand logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W1c9UA_wpXNBkD5chWMz9EHO-MbSv0c3AAO3aTmwRfN2oJd8LdsBH5J3VvNkD3q5S21l__s_lM6OYMS3aYbg7fS7Hx4rUwVUnDUKCtUlWb7tB4Up90ZWpvTtP_VR_SVCo_SdIhWOqVjjOH6x-BLyD6m4LhAz-GbQMBYjwwXyAiCWRgBUbcTzzLpKFaOL9oP92txsdeI5DjiyWos4p0EXjY5GKTLT7_wKedhcxQ1nYyZIaiG-RrfkCo3Q"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="text-primary font-headline-sm text-headline-sm uppercase tracking-wide truncate">Traffic Police</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm shrink-0">DL</span></div><div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm truncate"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse shrink-0"></span><span class="truncate">Duty: MG Road Jnc | Shift A</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Emergency Alerts" class="min-w-[44px] min-h-[44px] w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors relative" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-20 px-margin bg-surface"><div class="flex flex-col w-full space-y-space-md pb-6">
+<!-- 1. Urgent Stolen / Blacklisted Vehicle Alert Banner -->
+<section class="bg-error-container text-on-error-container rounded-xl p-space-md shadow-md animate-pulse">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm uppercase tracking-tight text-error font-bold">Stolen Vehicle Alert</span>
+<span class="bg-error text-on-error text-label-sm font-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider">FIR Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-error-container mt-1 font-medium">
+          FIR #441/24 • Hauz Khas PS • Reported: 12-May-2024
+        </p>
+<p class="font-label-sm text-label-sm text-error font-semibold mt-0.5">
+          Action Code: Detain driver &amp; seize vehicle immediately
+        </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-md pt-space-xs">
+<a class="h-12 bg-error text-on-error rounded-lg flex items-center justify-center gap-1.5 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" href="tel:112">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span>Dispatch 112</span>
+</a>
+<button class="h-12 bg-primary-container text-on-primary rounded-lg flex items-center justify-center gap-1.5 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" onclick="triggerImpoundModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">local_police</span>
+<span>Initiate Impound</span>
+</button>
+</div>
+</section>
+<!-- 2. Top Vehicle Identity Card with HSRP Graphic -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<!-- Authentic Indian High Security Registration Plate (HSRP) Component -->
+<div class="bg-surface-container-low rounded-lg p-2.5 shadow-inner">
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex items-stretch shadow-md">
+<!-- HSRP Left Blue IND Strip with Ashok Chakra Emblem -->
+<div class="bg-primary-container text-on-primary w-12 flex flex-col items-center justify-between py-2 px-1 shrink-0 select-none">
+<!-- Ashok Chakra circular motif -->
+<svg class="w-5 h-5 text-secondary-container animate-spin-slow" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9.5" stroke="currentColor"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="2.5"></circle>
+<path d="M12 2.5v19M2.5 12h19M5.2 5.2l13.6 13.6M18.8 5.2L5.2 18.8" stroke="currentColor"></path>
+</svg>
+<span class="font-plate-display text-[15px] font-black tracking-widest leading-none mt-1">IND</span>
+<span class="text-[8px] font-bold tracking-tighter opacity-70">HSRP</span>
+</div>
+<!-- Registration Plate Number Display -->
+<div class="flex-1 py-3 px-space-md flex flex-col justify-center items-center bg-surface-container-lowest">
+<div class="font-plate-display text-plate-display text-on-surface tracking-widest font-black uppercase text-center select-all drop-shadow-sm">
+            DL 01 CA 8821
+          </div>
+<div class="flex items-center gap-1 text-on-surface-variant text-label-sm font-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[13px] text-tertiary-container">verified</span>
+<span>Laser Code: <span class="font-mono">DL21HSRP904419</span></span>
+</div>
+</div>
+<button aria-label="Copy Plate Number" class="px-3 bg-surface-container flex items-center justify-center text-primary-container hover:bg-surface-container-high transition-colors" onclick="navigator.clipboard?.writeText('DL01CA8821'); alert('Plate DL 01 CA 8821 copied');" type="button">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Vehicle Specs Bento Card -->
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<span class="bg-surface-container text-primary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">directions_car</span>
+            Light Motor Vehicle (LMV - SUV)
+          </span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 font-bold">Hyundai Creta SX (O) 1.5 CRDi</h2>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-1 rounded font-label-sm text-label-sm shrink-0 font-bold">
+          BS-VI
+        </span>
+</div>
+<!-- Key Specifications Pill Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-primary-container">local_gas_station</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fuel / Emission</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Diesel • Bharat VI</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-primary-container">palette</span>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vehicle Color</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold truncate">Polar White</p>
+</div>
+</div>
+</div>
+<!-- Registration Authority & Identification Info -->
+<div class="bg-surface-container-low rounded-lg p-3 space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Registering Authority (RTO)</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold text-right">DL-03 Sheikh Sarai, Delhi</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Registration Date</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">14-Feb-2021 (Age: 3.3 Yrs)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Chassis Number</span>
+<div class="flex items-center gap-1 font-mono font-bold text-on-surface text-label-sm">
+<span id="chassisText">MALC281CM7•••••</span>
+<button aria-label="Reveal chassis" class="text-primary-container p-0.5" onclick="toggleChassis()" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Engine Number</span>
+<span class="font-mono font-bold text-on-surface text-label-sm">D4FA••••9241</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Comprehensive Regulatory & Compliance Status Grid -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary-container">fact_check</span>
+        Parivahan Legal Compliance
+      </h3>
+<span class="font-label-sm text-label-sm text-error font-bold">2 Non-Compliant</span>
+</div>
+<!-- Status Cards List -->
+<div class="grid grid-cols-1 gap-2.5">
+<!-- RC Status (Flagged/Alert) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Registration (RC)</span>
+<span class="bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm uppercase font-bold">
+                Flagged: Theft
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Status: Suspended under IPC 379 / MVA Sec 53</p>
+<p class="font-label-sm text-label-sm text-on-surface font-medium mt-1">RC Valid Till: <span class="font-bold">13-Feb-2036</span></p>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[24px] shrink-0">cancel</span>
+</div>
+<!-- Insurance Details (EXPIRED 42 DAYS AGO) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">security_update_warning</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Motor Insurance</span>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold uppercase">
+                Expired (42 Days)
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ICICI Lombard • Pol #3001/1892837</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="text-error font-label-sm text-label-sm font-bold">Expired on: 28-Mar-2024</span>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded">MVA Sec 196</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-error text-[24px] shrink-0">warning</span>
+</div>
+<!-- PUCC Pollution Certificate (Expiring Soon) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">nest_eco_leaf</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">PUC Certificate</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed-variant px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold uppercase">
+                Expiring in 4 Days
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cert: DL03PUC2024881 • Petrol/Diesel Petrol Pump Okhla</p>
+<p class="font-label-sm text-label-sm text-secondary font-bold mt-1">Valid Till: 24-Jun-2024</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0">hourglass_top</span>
+</div>
+<!-- Fitness & Tax (2-column mini grid) -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Fitness Certificate -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Fitness</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">Valid</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Private LMV</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold mt-2">Till: 13-Feb-2036</p>
+</div>
+<!-- Road Tax -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Road Tax</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold">Paid</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Lifetime Tax (LTT)</p>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold mt-2">Status: Fully Clear</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Owner & Departmental Records Section -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary-container">account_circle</span>
+        Ownership &amp; Registry Record
+      </h3>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded">1st Owner</span>
+</div>
+<!-- Owner Details Card -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registered Owner</p>
+<p class="font-label-lg text-label-lg text-on-surface font-bold">Vikramaditya S. Malhotra</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">S/o: R. K. Malhotra</p>
+</div>
+<a class="min-h-[44px] px-3 bg-primary-container text-on-primary rounded-lg flex items-center gap-1 font-label-md text-label-md shadow-sm active:scale-95 transition-transform shrink-0" href="tel:+919811000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Call</span>
+</a>
+</div>
+<div class="pt-2 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Registered Mobile:</span>
+<span class="font-mono font-bold text-on-surface">+91 98110 ••••• (Verified)</span>
+</div>
+<div class="pt-1">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Permanent Address:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium mt-0.5">
+          B-42, Greater Kailash Part 1, South Delhi, New Delhi - 110048
+        </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-body-sm font-body-sm bg-surface-container-lowest p-2 rounded">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">account_balance</span>
+          Financier / Hypothecation:
+        </span>
+<span class="font-label-sm text-label-sm text-error font-bold">HDFC Bank Ltd.</span>
+</div>
+</div>
+</section>
+<!-- 5. Pending Challans Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pending Challans</h3>
+<p class="font-body-sm text-body-sm text-error font-semibold">3 Unpaid Violations • ₹5,500 Total</p>
+</div>
+</div>
+<span class="bg-error text-on-error px-2 py-0.5 rounded-full font-label-sm text-label-sm font-black">₹5,500</span>
+</div>
+<!-- Challan List Preview -->
+<div class="space-y-2 pt-1">
+<!-- Challan 1 -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Red Light Jumping</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-1.5 rounded">Sec 184</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">04-Apr-2024 • AI Cam #14 AIIMS Jnc</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-label-md text-label-md text-error font-bold">₹1,000</p>
+<span class="font-label-sm text-label-sm text-error font-medium">Pending</span>
+</div>
+</div>
+<!-- Challan 2 -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Over Speeding (&gt;20 km/h)</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-1.5 rounded">Sec 183(1)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">18-Apr-2024 • Barapullah Flyover</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-label-md text-label-md text-error font-bold">₹2,000</p>
+<span class="font-label-sm text-label-sm text-error font-medium">Pending</span>
+</div>
+</div>
+<!-- Challan 3 -->
+<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between gap-space-sm">
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">No Valid Insurance</span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-1.5 rounded">Sec 196</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">02-May-2024 • Physical Check IIT Gate</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-label-md text-label-md text-error font-bold">₹2,500</p>
+<span class="font-label-sm text-label-sm text-error font-medium">Pending</span>
+</div>
+</div>
+</div>
+<!-- History / Photo Evidence Link -->
+<button class="w-full py-2.5 bg-surface-container text-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors" onclick="alert('Displaying 3 high-res photo proofs and ANPR capture metadata...')" type="button">
+<span>View Challan History &amp; Camera Evidence</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</section>
+<!-- 6. Sticky / Prominent Operational Enforcement Action Hub -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-sm sticky bottom-2 z-20">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Field Officer Quick Enforcement Action</span>
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+        GPS: 28.5355° N, 77.2090° E
+      </span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Issue Challan CTA -->
+<button class="min-h-[52px] bg-primary-container text-on-primary rounded-xl flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-md active:scale-95 transition-transform" onclick="openChallanForm()" type="button">
+<span class="material-symbols-outlined text-[22px] text-secondary-container">receipt_long</span>
+<span>Issue Challan</span>
+</button>
+<!-- Share Report CTA -->
+<button class="min-h-[52px] bg-surface-container text-on-surface rounded-xl flex items-center justify-center gap-2 font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high active:scale-95 transition-transform" onclick="shareInspectionReport()" type="button">
+<span class="material-symbols-outlined text-[22px] text-primary-container">share</span>
+<span>Share Report</span>
+</button>
+</div>
+<!-- Immediate Severe Action Trigger -->
+<button class="w-full min-h-[48px] bg-error text-on-error rounded-xl flex items-center justify-center gap-2 font-label-md text-label-md shadow-sm active:scale-95 transition-transform" onclick="triggerImpoundModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">car_crash</span>
+<span>Impound Vehicle / Order Crane Towing</span>
+</button>
+</section>
+</div>
+<script>
+  function toggleChassis() {
+    const el = document.getElementById('chassisText');
+    if (!el) return;
+    if (el.innerText.includes('•')) {
+      el.innerText = 'MALC281CM7481992';
+    } else {
+      el.innerText = 'MALC281CM7•••••';
+    }
+  }
+
+  function triggerImpoundModal() {
+    const confirmed = confirm("⚠️ CONFIRM CRANE/IMPOUND DISPATCH?\n\nVehicle DL 01 CA 8821 will be logged as Seized under FIR #441/24. Local Tow Crane will be notified at MG Road Junction.");
+    if (confirmed) {
+      alert("🚨 Tow Dispatch Request #TW-8012 Created! Driver OTP sent to control room.");
+    }
+  }
+
+  function openChallanForm() {
+    alert("Navigating to Digital E-Challan Issuance Terminal for DL 01 CA 8821 with auto-filled FIR and expired insurance clauses (Sec 196 + Sec 184).");
+  }
+
+  function shareInspectionReport() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Traffic Enforcement Spot Report: DL 01 CA 8821',
+        text: 'VEHICLE INSPECTION REPORT:\nPlate: DL 01 CA 8821\nStatus: STOLEN / SUSPENDED\nPending Dues: ₹5,500\nLoc: MG Road Jnc Delhi',
+      }).catch(() => {});
+    } else {
+      alert("Report PDF exported to Officer Duty Terminal / WhatsApp Dispatch.");
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_10px_rgba(11,42,91,0.05)]" data-active-classes="text-primary-container font-label-md"><div class="flex justify-around items-center h-20 px-gutter-sm max-w-lg mx-auto"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[52px] text-on-surface-variant transition-colors" data-path="home-dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[52px] transition-colors text-primary-container font-label-md" data-path="vehicle-search" href="#"><span class="material-symbols-outlined text-[24px]">search</span><span class="font-label-sm text-label-sm">Search</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[52px] text-on-surface-variant transition-colors" data-path="issue-challan" href="#"><div class="w-10 h-10 -mt-3 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md"><span class="material-symbols-outlined text-[22px]">receipt_long</span></div><span class="font-label-sm text-label-sm">Challan</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[52px] text-on-surface-variant transition-colors" data-path="shift-history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm">History</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[52px] text-on-surface-variant transition-colors" data-path="officer-profile" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>
